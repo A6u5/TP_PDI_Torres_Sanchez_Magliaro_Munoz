@@ -13,6 +13,7 @@
 #      La patente es el rectángulo que envuelve esos 6 caracteres (con un margen).
 #   B) Segmentación de los caracteres: cada uno de los 6 se recorta por separado.
 
+# Librerias:
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -22,8 +23,10 @@ from pathlib import Path
 # ---------------------------------------------------------------------------------------
 # PARÁMETROS
 # ---------------------------------------------------------------------------------------
-
+# Carpeta donde está este script (problema_2/)
 BASE_DIR = Path(__file__).resolve().parent
+
+# Carpeta donde están todas las patentes
 CARPETA_IMAGENES = BASE_DIR / "patentes"   # si no existe, se busca junto al script
 
 # Se prueba primero con criterios ESTRICTOS (los del enunciado). Si en una imagen no aparece
